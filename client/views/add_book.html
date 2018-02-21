@@ -1,0 +1,37 @@
+<div class="container">
+	<a href="#/books">Go Back</a>
+	<div class="card card-primary">
+		<div class="card-block">
+				<h3 class="card-header"> 
+					Add book
+				</h3>
+		</div>
+			<form ng-submit="addBook()">
+				<div class="form-group">
+					<label>Title</label>
+					<input type="text" class="form-control" ng-model="book.title" placeholder="Title">
+				</div>
+				<div class="form-group">
+					<label>Genre</label>
+					<input type="text" class="form-control" ng-model="book.genre" placeholder="Genre">
+				</div>
+				<div class="form-group">
+					<label>Pages</label>
+					<input type="number" class="form-control" ng-model="book.pages" placeholder="Pages">
+				</div>
+					<div class="form-group">
+					<label>Publisher</label>
+					<input type="text" class="form-control" ng-model="book.publisher" placeholder="Publisher">
+				</div>
+					<div class="form-group">
+					<label>Description</label>
+					<input type="text" class="form-control" ng-model="book.description" placeholder="Description">
+				</div>
+					<div class="form-group">
+					<label>Image</label>
+					<input type="text" class="form-control" ng-model="book.image_url" placeholder="Image">
+				</div>
+				<button type="submit" class="btn btn-default"></button>
+			</form>
+	</div>
+</div>

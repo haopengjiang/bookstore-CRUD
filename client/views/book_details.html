@@ -1,0 +1,22 @@
+<div class="container">
+	<a href="#/books">Go Back</a>
+	<div class="card card-primary" ng-init=getBook()>
+		<div class="card-block">
+				<h3 class="card-header"> 
+					{{book.title}}
+				</h3>
+			<ul class="list-group">
+ 				<li class="list-group-item">{{book.image_url}}</li>
+  				<li class="list-group-item">{{book.description}}</li>
+  				<li class="list-group-item">{{book.genre}}</li>
+  				<li class="list-group-item">{{book.publisher}}</li>
+  				<li class="list-group-item">{{book.pages}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="pull-right">
+	<a href="#" ng-click="removeBook(book._id)">Delete</a>
+</div>
